@@ -16,6 +16,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.net.URI;
 import java.util.List;
 
+import javax.validation.Valid;
+
 
 @RestController
 @RequestMapping("/topicos")
@@ -30,7 +32,7 @@ public class TopicosController {
     @GetMapping
     public List<TopicosDto> lista(String nomeDoCurso) {
     	System.out.println(nomeDoCurso);
-    	if(nomeDoCurso.isEmpty()) {
+    	if(nomeDoCurso == null) {
     		List<Topico> topicos = topicoRepository.findAll();    		
     		return TopicosDto.converter(topicos);
     	} else {
@@ -40,7 +42,7 @@ public class TopicosController {
 	}
     
     @PostMapping
-    public ResponseEntity<TopicosDto> cadastrar(@RequestBody TopicoForm form, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity<TopicosDto> cadastrar(@RequestBody @Valid TopicoForm form, UriComponentsBuilder uriBuilder) {
     	Topico topico = form.converter(cursoRepository);
     	topicoRepository.save(topico);
     	
