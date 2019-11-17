@@ -1,4 +1,4 @@
-# Forum
+# Forum Service Using Spring Boot
 
 This is a Spring Boot service to a Forum Example, based on [Alura Spring Boot course](https://cursos.alura.com.br/course/spring-boot-api-rest).
 
