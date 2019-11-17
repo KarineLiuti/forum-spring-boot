@@ -1,7 +1,20 @@
 # Forum
 
-This project is an Alura Forum example using Spring Boot, based on Alura Spring Boot course.
+This project is a service of a Forum using Spring Boot, based on [Alura Spring Boot course](https://cursos.alura.com.br/course/spring-boot-api-rest).
+
+
+## Requirements
+
+For building and running the application you need:
+
+- [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+
+## Running the application locally
 
 You can run this project using any Java IDE.
+The main class is `ForumApplication.java`.
+
+
 
 Have fun!
