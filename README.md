@@ -1,6 +1,6 @@
 # Forum
 
-This project is a service of a Forum using Spring Boot, based on [Alura Spring Boot course](https://cursos.alura.com.br/course/spring-boot-api-rest).
+This is a Spring Boot service to a Forum Example, based on [Alura Spring Boot course](https://cursos.alura.com.br/course/spring-boot-api-rest).
 
 
 ## Requirements
@@ -17,4 +17,4 @@ The main class is `ForumApplication.java`.
 
 
 
-Have fun!
+Have fun! :)
