@@ -1,4 +1,4 @@
-package br.com.alura.forum.controller;
+package br.com.alura.forum.controller.dto;
 
 import br.com.alura.forum.modelo.Topico;
 
@@ -7,10 +7,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class TopicosDto {
-    Long id;
-    String titulo;
-    String mensagem;
-    LocalDateTime dataCriacao;
+	private Long id;
+	private String titulo;
+	private String mensagem;
+	private LocalDateTime dataCriacao;
 
     public TopicosDto (Topico topico) {
         this.id = topico.getId();
